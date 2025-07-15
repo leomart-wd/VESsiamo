@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const submitBtn = document.getElementById('submit-btn');
     const backToMenuBtn = document.getElementById('back-to-menu-btn');
+    const backToMenuDuringQuizBtn = document.getElementById('back-to-menu-during-quiz-btn'); // NUOVO RIFERIMENTO
     
     const resultsTitle = document.getElementById('results-title');
     const scoreText = document.getElementById('score-text');
@@ -49,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const questionPool = allQuestionsData[testId];
         
         if (testId === 'test3') {
-            // Il test 3 usa tutte le domande, non è casuale
             currentTestQuestions = questionPool;
         } else {
             const numQuestionsToSelect = parseInt(numQuestionsInput.value, 10);
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             currentTestQuestions = shuffledQuestions.slice(0, numQuestionsToSelect);
         }
         
-        gradableQuestionsCount = currentTestQuestions.filter(q => q.type !== 'open_ended').length;
+        gradableQuestionsCount = currentTestQuestions.filter(q => q.type !== 'open_ended' && q.type !== 'header').length;
         
         quizTitle.textContent = document.querySelector(`[data-testid="${testId}"]`).textContent;
         renderQuestions();
@@ -74,13 +74,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderQuestions() {
         let formHTML = '';
+        let questionCounter = 0;
         currentTestQuestions.forEach((q, index) => {
-             // Aggiunta per gestire i titoli di sezione
             if (q.type === 'header') {
                 formHTML += `<h3 class="section-header">${q.text}</h3>`;
                 return;
             }
-            formHTML += `<div class="question-block" id="q-block-${index}"><p class="question-text">${q.question}</p><div class="options-container">`;
+            questionCounter++;
+            formHTML += `<div class="question-block" id="q-block-${index}"><p class="question-text">${questionCounter}. ${q.question}</p><div class="options-container">`;
             
             switch (q.type) {
                 case 'multiple_choice':
@@ -133,9 +134,11 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         let score = 0;
         let resultsHTML = '';
+        let questionCounter = 0;
 
         currentTestQuestions.forEach((q, index) => {
             if (q.type === 'header') return;
+            questionCounter++;
 
             const inputElement = document.querySelector(`[name="q-${index}"]:checked`) || document.querySelector(`[name="q-${index}"]`);
             const userAnswer = inputElement ? inputElement.value.trim() : "";
@@ -154,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             resultsHTML += `
                 <div class="result-item ${resultClass}">
-                    <p class="result-question">${q.question}</p>
+                    <p class="result-question">${questionCounter}. ${q.question}</p>
                     <p><strong>La tua risposta:</strong> ${userAnswer || "<em>Nessuna risposta</em>"}</p>
                     <p class="result-explanation"><strong>Spiegazione:</strong> ${q.explanation || q.model_answer}</p>
                 </div>
@@ -170,13 +173,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function resetToMenu() {
+        quizContainer.classList.add('d-none');
         resultsContainer.classList.add('d-none');
         menuContainer.classList.remove('d-none');
+        quizForm.reset();
     }
     
+    // NUOVA FUNZIONE PER LA CONFERMA
+    function handleBackToMenuDuringQuiz() {
+        const userConfirmed = confirm("Sei sicuro di voler tornare al menù principale? Perderai tutti i progressi di questo test.");
+        if (userConfirmed) {
+            resetToMenu();
+        }
+    }
+
     // Event Listeners
     submitBtn.addEventListener('click', handleSubmit);
     backToMenuBtn.addEventListener('click', resetToMenu);
+    backToMenuDuringQuizBtn.addEventListener('click', handleBackToMenuDuringQuiz); // NUOVO EVENT LISTENER
 
     fetchQuestions();
 });
