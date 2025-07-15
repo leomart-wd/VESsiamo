@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuContainer = document.getElementById('menu-container');
     const quizContainer = document.getElementById('quiz-container');
     const resultsContainer = document.getElementById('results-container');
+    const numQuestionsInput = document.getElementById('num-questions');
     
     const quizTitle = document.getElementById('quiz-title');
     const quizForm = document.getElementById('quiz-form');
@@ -18,11 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultsDetails = document.getElementById('results-details');
 
     let allQuestionsData = {};
-    let currentTestId = '';
     let currentTestQuestions = [];
     let gradableQuestionsCount = 0;
 
-    // Carica il file JSON
+    // Funzione per mescolare un array (algoritmo di Fisher-Yates)
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
     async function fetchQuestions() {
         try {
             const response = await fetch('quiz.json');
@@ -37,13 +45,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Inizia un quiz
     function startQuiz(testId) {
-        currentTestId = testId;
-        currentTestQuestions = allQuestionsData[testId];
-        gradableQuestionsCount = currentTestQuestions.filter(q => q.type !== 'header' && q.type !== 'open_ended').length;
+        const questionPool = allQuestionsData[testId];
         
-        quizTitle.textContent = currentTestQuestions.find(q => q.type === 'header').text || `Test`;
+        if (testId === 'test3') {
+            // Il test 3 usa tutte le domande, non è casuale
+            currentTestQuestions = questionPool;
+        } else {
+            const numQuestionsToSelect = parseInt(numQuestionsInput.value, 10);
+            if (numQuestionsToSelect > questionPool.length || numQuestionsToSelect < 1) {
+                alert(`Per favore, scegli un numero di domande tra 1 e ${questionPool.length}.`);
+                return;
+            }
+            const shuffledQuestions = shuffleArray([...questionPool]);
+            currentTestQuestions = shuffledQuestions.slice(0, numQuestionsToSelect);
+        }
+        
+        gradableQuestionsCount = currentTestQuestions.filter(q => q.type !== 'open_ended').length;
+        
+        quizTitle.textContent = document.querySelector(`[data-testid="${testId}"]`).textContent;
         renderQuestions();
 
         menuContainer.classList.add('d-none');
@@ -52,15 +72,14 @@ document.addEventListener('DOMContentLoaded', () => {
         updateProgress();
     }
 
-    // Renderizza le domande
     function renderQuestions() {
         let formHTML = '';
         currentTestQuestions.forEach((q, index) => {
+             // Aggiunta per gestire i titoli di sezione
             if (q.type === 'header') {
                 formHTML += `<h3 class="section-header">${q.text}</h3>`;
                 return;
             }
-
             formHTML += `<div class="question-block" id="q-block-${index}"><p class="question-text">${q.question}</p><div class="options-container">`;
             
             switch (q.type) {
@@ -90,20 +109,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
         quizForm.innerHTML = formHTML;
         quizForm.addEventListener('change', updateProgress);
+        quizForm.addEventListener('keyup', updateProgress);
     }
     
-    // Aggiorna la barra di progresso
     function updateProgress() {
         const totalQuestions = currentTestQuestions.filter(q => q.type !== 'header').length;
-        const answeredInputs = quizForm.querySelectorAll('input:checked, input[type=text]:not(:placeholder-shown), textarea:not(:placeholder-shown)');
-        const answeredQuestions = new Set(Array.from(answeredInputs).map(el => el.name)).size;
+        const inputs = quizForm.querySelectorAll('input[type=text], input[type=radio], textarea');
+        const answeredNames = new Set();
         
-        progressText.textContent = `Domanda ${answeredQuestions} di ${totalQuestions}`;
-        const progressPercentage = totalQuestions > 0 ? (answeredQuestions / totalQuestions) * 100 : 0;
+        inputs.forEach(input => {
+            if ((input.type === 'radio' && input.checked) || (input.type !== 'radio' && input.value.trim() !== '')) {
+                answeredNames.add(input.name);
+            }
+        });
+        
+        const answeredCount = answeredNames.size;
+        progressText.textContent = `Domande risposte: ${answeredCount} di ${totalQuestions}`;
+        const progressPercentage = totalQuestions > 0 ? (answeredCount / totalQuestions) * 100 : 0;
         progressBarInner.style.width = `${progressPercentage}%`;
     }
 
-    // Gestisce l'invio e la correzione
     function handleSubmit(e) {
         e.preventDefault();
         let score = 0;
@@ -115,11 +140,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const inputElement = document.querySelector(`[name="q-${index}"]:checked`) || document.querySelector(`[name="q-${index}"]`);
             const userAnswer = inputElement ? inputElement.value.trim() : "";
 
-            let isCorrect = false;
             let resultClass = 'open';
             
             if (q.type !== 'open_ended') {
-                isCorrect = userAnswer.toLowerCase() === q.answer.toString().toLowerCase();
+                const isCorrect = userAnswer.toLowerCase() === q.answer.toString().toLowerCase();
                 if (isCorrect) {
                     score++;
                     resultClass = 'correct';
