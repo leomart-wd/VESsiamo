@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // NUOVA FUNZIONE PER LA CONFERMA
     function handleBackToMenuDuringQuiz() {
-        const userConfirmed = confirm("Sei sicuro di voler tornare al menù principale? Perderai tutti i progressi di questo test.");
+        const userConfirmed = confirm("Sei sicura/o di voler tornare al menù principale? Perderai tutti i progressi di questo test.");
         if (userConfirmed) {
             resetToMenu();
         }
