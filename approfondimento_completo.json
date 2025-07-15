@@ -1,0 +1,904 @@
+[
+  {
+    "id": "q300",
+    "domanda": "Cosa accade alla glottide durante uno sforzo fisico intenso?",
+    "opzioni": [
+      {
+        "testo": "Il flusso d'aria rallenta",
+        "corretta": false
+      },
+      {
+        "testo": "Il flusso d'aria aumenta",
+        "corretta": false
+      },
+      {
+        "testo": "Il flusso d'aria diminuisce",
+        "corretta": false
+      },
+      {
+        "testo": "La glottide si apre completamente",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q301",
+    "domanda": "Quale muscolo è principalmente responsabile della compressione mediale delle corde vocali?",
+    "opzioni": [
+      {
+        "testo": "Tiroaritenoideo laterale",
+        "corretta": false
+      },
+      {
+        "testo": "Tiroaritenoideo centrale",
+        "corretta": false
+      },
+      {
+        "testo": "Cricoaritenoideo posteriore",
+        "corretta": false
+      },
+      {
+        "testo": "Cricoaritenoideo laterale",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q302",
+    "domanda": "Cosa succede quando aumenta la pressione sottoglottica?",
+    "opzioni": [
+      {
+        "testo": "L'intensità della voce diminuisce",
+        "corretta": false
+      },
+      {
+        "testo": "La frequenza fondamentale aumenta",
+        "corretta": false
+      },
+      {
+        "testo": "La resistenza glottica aumenta",
+        "corretta": false
+      },
+      {
+        "testo": "Le corde vocali vibrano più lentamente",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q303",
+    "domanda": "Qual è l'effetto dell'elevazione laringea sulle corde vocali?",
+    "opzioni": [
+      {
+        "testo": "Diminuisce la rigidità delle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Aumenta la rigidità delle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Riduce la frequenza di vibrazione delle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Non ha alcun effetto sulle corde vocali",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q304",
+    "domanda": "Qual è la funzione principale del muscolo elevatore del palato?",
+    "opzioni": [
+      {
+        "testo": "Sollevare il palato molle lateralmente",
+        "corretta": false
+      },
+      {
+        "testo": "Sollevare il palato molle verso l'alto e indietro",
+        "corretta": false
+      },
+      {
+        "testo": "Dilatare la tuba uditiva",
+        "corretta": false
+      },
+      {
+        "testo": "Chiudere l'ugola",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q305",
+    "domanda": "Qual è la funzione del muscolo costrittore superiore?",
+    "opzioni": [
+      {
+        "testo": "Alzare il palato molle",
+        "corretta": false
+      },
+      {
+        "testo": "Compensare la chiusura incompleta del palato molle",
+        "corretta": false
+      },
+      {
+        "testo": "Deprime la laringe",
+        "corretta": false
+      },
+      {
+        "testo": "Protrudere la mandibola",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q306",
+    "domanda": "Durante la deglutizione, quali strutture si chiudono oltre al palato molle?",
+    "opzioni": [
+      {
+        "testo": "L'epiglottide e le corde vocali vere e false",
+        "corretta": false
+      },
+      {
+        "testo": "La lingua e l'ugola",
+        "corretta": false
+      },
+      {
+        "testo": "Il muscolo cricofaringeo",
+        "corretta": false
+      },
+      {
+        "testo": "Il naso, l'epiglottico",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q307",
+    "domanda": "Quale muscolo è principalmente responsabile per l'allargamento laterale del palato molle?",
+    "opzioni": [
+      {
+        "testo": "Il costrittore faringeo inferiore",
+        "corretta": false
+      },
+      {
+        "testo": "Il levatore del palato",
+        "corretta": false
+      },
+      {
+        "testo": "Il tensore del palato",
+        "corretta": false
+      },
+      {
+        "testo": "Il costrittore superiore",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q308",
+    "domanda": "Cosa succede se il palato molle non chiude correttamente durante la produzione del suono?",
+    "opzioni": [
+      {
+        "testo": "Il suono diventa nasale",
+        "corretta": false
+      },
+      {
+        "testo": "Il suono diventa aspro",
+        "corretta": false
+      },
+      {
+        "testo": "Il suono si spegne completamente",
+        "corretta": false
+      },
+      {
+        "testo": "Il suono diventa più acuto",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q309",
+    "domanda": "Qual è la principale caratteristica dell'articolazione temporo-mandibolare?",
+    "opzioni": [
+      {
+        "testo": "È una articolazione condiloidea",
+        "corretta": false
+      },
+      {
+        "testo": "È una articolazione ball-and-socket",
+        "corretta": false
+      },
+      {
+        "testo": "È una articolazione sinoviale",
+        "corretta": false
+      },
+      {
+        "testo": "È una articolazione fibrosa",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q310",
+    "domanda": "Quali muscoli contribuiscono alla posizione del palato molle in caso di rinolalia chiusa?",
+    "opzioni": [
+      {
+        "testo": "Palatoglosso e palatofaringeo",
+        "corretta": false
+      },
+      {
+        "testo": "Tensore del palato e costrittore superiore",
+        "corretta": false
+      },
+      {
+        "testo": "Cricofaringeo e costrittore inferiore",
+        "corretta": false
+      },
+      {
+        "testo": "Muscoli mimici e lingua",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q311",
+    "domanda": "Quando si produce un suono nasale, cosa succede al palato molle?",
+    "opzioni": [
+      {
+        "testo": "Il palato molle è completamente chiuso",
+        "corretta": false
+      },
+      {
+        "testo": "Il palato molle è semi-aperto",
+        "corretta": false
+      },
+      {
+        "testo": "Il palato molle è completamente aperto",
+        "corretta": false
+      },
+      {
+        "testo": "Il palato molle è sollevato",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q312",
+    "domanda": "Quale muscolo è coinvolto nell'articolazione delle consonanti nasali come \"n\" e \"m\"?",
+    "opzioni": [
+      {
+        "testo": "Il tensore del palato",
+        "corretta": false
+      },
+      {
+        "testo": "Il muscolo cricofaringeo",
+        "corretta": false
+      },
+      {
+        "testo": "Il muscolo costrittore superiore",
+        "corretta": false
+      },
+      {
+        "testo": "Il palato molle",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q313",
+    "domanda": "Quale muscolo è primario nel controllo della frequenza fondamentale (F0)?",
+    "opzioni": [
+      {
+        "testo": "Cricoaritenoideo posteriore",
+        "corretta": false
+      },
+      {
+        "testo": "Cricotiroideo",
+        "corretta": false
+      },
+      {
+        "testo": "Tiroioideo",
+        "corretta": false
+      },
+      {
+        "testo": "Cricoaritenoideo laterale",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q314",
+    "domanda": "Quale dei seguenti assi attraversa il corpo dalla testa ai piedi?",
+    "opzioni": [
+      {
+        "testo": "Asse longitudinale",
+        "corretta": false
+      },
+      {
+        "testo": "Asse trasversale",
+        "corretta": false
+      },
+      {
+        "testo": "Asse sagittale",
+        "corretta": false
+      },
+      {
+        "testo": "Asse orizzontale",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q315",
+    "domanda": "Qual è la principale funzione del cricoaritenoideo laterale durante la fonazione?",
+    "opzioni": [
+      {
+        "testo": "Aumentare la frequenza fondamentale",
+        "corretta": false
+      },
+      {
+        "testo": "Avvicinare le corde vocali alla linea mediana",
+        "corretta": false
+      },
+      {
+        "testo": "Stabilizzare l'adduzione forzata sugli acuti",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q316",
+    "domanda": "Cosa accade quando il flusso d'aria attraverso la glottide aumenta?",
+    "opzioni": [
+      {
+        "testo": "La pressione sottoglottica aumenta",
+        "corretta": false
+      },
+      {
+        "testo": "La pressione sottoglottica diminuisce",
+        "corretta": false
+      },
+      {
+        "testo": "Il timbro della voce rimane invariato",
+        "corretta": false
+      },
+      {
+        "testo": "La frequenza fondamentale diminuisce",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q317",
+    "domanda": "Qual è la relazione istintiva in un cantante inesperto tra la pressione sottoglottica e la frequenza",
+    "opzioni": [
+      {
+        "testo": "Maggiore pressione aumenta la F0",
+        "corretta": false
+      },
+      {
+        "testo": "Maggiore pressione diminuisce la F0",
+        "corretta": false
+      },
+      {
+        "testo": "La pressione non ha effetto sulla F0",
+        "corretta": false
+      },
+      {
+        "testo": "La pressione sottoglottica aumenta solo in frequenze basse",
+        "corretta": false
+      }
+    ],
+    "spiegazione": " fondamentale (F0)?"
+  },
+  {
+    "id": "q318",
+    "domanda": "Quando si modifica la posizione delle labbra, quale effetto si ha sulla voce?",
+    "opzioni": [
+      {
+        "testo": "Cambia solo la frequenza",
+        "corretta": false
+      },
+      {
+        "testo": "Cambia la lunghezza delle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Modifica la vibrazione e il timbro della voce",
+        "corretta": false
+      },
+      {
+        "testo": "Non ha alcun effetto sulla voce",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q319",
+    "domanda": "Cosa accade quando il muscolo cricotiroideo è attivato?",
+    "opzioni": [
+      {
+        "testo": "La frequenza fondamentale aumenta",
+        "corretta": false
+      },
+      {
+        "testo": "La frequenza fondamentale diminuisce",
+        "corretta": false
+      },
+      {
+        "testo": "Le corde vocali si allungano e la voce diventa più grave",
+        "corretta": false
+      },
+      {
+        "testo": "La pressione sottoglottica aumenta",
+        "corretta": false
+      },
+      {
+        "testo": "La frequenza fondamentale aumenta",
+        "corretta": false
+      },
+      {
+        "testo": "La frequenza fondamentale diminuisce",
+        "corretta": false
+      },
+      {
+        "testo": "Le corde vocali si allungano e la voce diventa più grave",
+        "corretta": false
+      },
+      {
+        "testo": "La pressione sottoglottica aumenta",
+        "corretta": false
+      },
+      {
+        "testo": "Provoca un abbassamento della frequenza fondamentale",
+        "corretta": false
+      },
+      {
+        "testo": "Aumenta la tensione delle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Impedisce la vibrazione delle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Ha effetto solo sulla qualità timbricale",
+        "corretta": false
+      },
+      {
+        "testo": "Una voce con tono molto acuto",
+        "corretta": false
+      },
+      {
+        "testo": "Una voce che produce suoni sussurrati",
+        "corretta": false
+      },
+      {
+        "testo": "La dispersione di flusso transglottico, che rende la voce ariosa",
+        "corretta": false
+      },
+      {
+        "testo": "Un aumento di pressione sotto-glottica",
+        "corretta": false
+      },
+      {
+        "testo": "La difficoltà nel misurare l'intensità",
+        "corretta": false
+      },
+      {
+        "testo": "La mancanza di strumenti adatti",
+        "corretta": false
+      },
+      {
+        "testo": "La terminologia non univoca",
+        "corretta": false
+      },
+      {
+        "testo": "La mancanza di tecniche di rilassamento vocale",
+        "corretta": false
+      },
+      {
+        "testo": "Verificare la durata della produzione vocale",
+        "corretta": false
+      },
+      {
+        "testo": "Osservare come il muscolo si contrae durante l'esecuzione del suono",
+        "corretta": false
+      },
+      {
+        "testo": "Determinare il volume massimo raggiungibile",
+        "corretta": false
+      },
+      {
+        "testo": "Testare l'abilità di mantenere la voce in una tonalità acuta",
+        "corretta": false
+      },
+      {
+        "testo": "È una scala per la misurazione della velocità di produzione vocale",
+        "corretta": false
+      },
+      {
+        "testo": "È una scala soggettiva per la disfonia",
+        "corretta": false
+      },
+      {
+        "testo": "È una scala che misura l'intensità del suono",
+        "corretta": false
+      },
+      {
+        "testo": "È una scala utilizzata solo per la voce parlata",
+        "corretta": false
+      },
+      {
+        "testo": "La voce diventa più acuta",
+        "corretta": false
+      },
+      {
+        "testo": "La voce si affatica più velocemente",
+        "corretta": false
+      },
+      {
+        "testo": "La voce diventa più profonda",
+        "corretta": false
+      },
+      {
+        "testo": "La voce si stabilizza",
+        "corretta": false
+      },
+      {
+        "testo": "Un'eccessiva muscolatura del collo",
+        "corretta": false
+      },
+      {
+        "testo": "Un aumento di tono pedieno",
+        "corretta": false
+      },
+      {
+        "testo": "Un compenso per una laringe innalzata",
+        "corretta": false
+      },
+      {
+        "testo": "Una disfunzione nella chiusura della bocca",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si osserva una voce durante la registrazione",
+        "corretta": false
+      },
+      {
+        "testo": "Quando la voce è analizzata in un laboratorio scientifico",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si eseguono esercizi vocali specifici di sovraccarico muscolare",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si eseguono test automatici su una voce registrata",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si osserva una voce durante la registrazione",
+        "corretta": false
+      },
+      {
+        "testo": "Quando la voce è analizzata in un laboratorio scientifico",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si eseguono esercizi vocali specifici di sovraccarico muscolare",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si eseguono test automatici su una voce registrata",
+        "corretta": false
+      },
+      {
+        "testo": "La lunghezza della nota",
+        "corretta": false
+      },
+      {
+        "testo": "La capacità di mantenere l'inclinazione nel tempo",
+        "corretta": false
+      },
+      {
+        "testo": "La velocità della produzione vocale",
+        "corretta": false
+      },
+      {
+        "testo": "La velocità del recupero vocale",
+        "corretta": false
+      },
+      {
+        "testo": "La laringoscopia",
+        "corretta": false
+      },
+      {
+        "testo": "La spettrografia",
+        "corretta": false
+      },
+      {
+        "testo": "Il test di risonanza magnetica",
+        "corretta": false
+      },
+      {
+        "testo": "La stroboscopia laringea",
+        "corretta": false
+      },
+      {
+        "testo": "Quando la laringe è sollevata",
+        "corretta": false
+      },
+      {
+        "testo": "Nei toni acuti per stabilizzare l'adduzione",
+        "corretta": false
+      },
+      {
+        "testo": "Quando la voce è molto grave",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si cerca di aumentare la risonanza",
+        "corretta": false
+      },
+      {
+        "testo": "Una paralisi delle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Un edema della commissura posteriore",
+        "corretta": false
+      },
+      {
+        "testo": "Un'infiammazione acuta",
+        "corretta": false
+      },
+      {
+        "testo": "Tutte",
+        "corretta": false
+      },
+      {
+        "testo": "Un miglioramento della tensione longitudinale cordale",
+        "corretta": false
+      },
+      {
+        "testo": "L'uso di un altro meccanismo di chiusura",
+        "corretta": false
+      },
+      {
+        "testo": "Un cambiamento nel flusso sottoglottico d'aria",
+        "corretta": false
+      },
+      {
+        "testo": "Un aumento della risonanza nasale",
+        "corretta": false
+      },
+      {
+        "testo": "Una voce più forte e stabile",
+        "corretta": false
+      },
+      {
+        "testo": "Una difficoltà a chiudere completamente le corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Un'intensità vocale che rimane invariata",
+        "corretta": false
+      },
+      {
+        "testo": "Un miglioramento nella qualità della voce acuta",
+        "corretta": false
+      },
+      {
+        "testo": "Un problema al margine nelle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Un cambiamento nel flusso d'aria",
+        "corretta": false
+      },
+      {
+        "testo": "Un'infiammazione cronica della laringe",
+        "corretta": false
+      },
+      {
+        "testo": "Un miglioramento nella resistenza glottica",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si osserva una voce durante la registrazione",
+        "corretta": false
+      },
+      {
+        "testo": "Quando la voce è analizzata in un laboratorio scientifico",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si eseguono esercizi vocali specifici di sovraccarico muscolare",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si eseguono test automatici su una voce registrata",
+        "corretta": false
+      },
+      {
+        "testo": "La lunghezza della nota",
+        "corretta": false
+      },
+      {
+        "testo": "La capacità di mantenere l'inclinazione nel tempo",
+        "corretta": false
+      },
+      {
+        "testo": "La velocità della produzione vocale",
+        "corretta": false
+      },
+      {
+        "testo": "La velocità del recupero vocale",
+        "corretta": false
+      },
+      {
+        "testo": "La laringoscopia",
+        "corretta": false
+      },
+      {
+        "testo": "La spettrografia",
+        "corretta": false
+      },
+      {
+        "testo": "Il test di risonanza magnetica",
+        "corretta": false
+      },
+      {
+        "testo": "La stroboscopia laringea",
+        "corretta": false
+      },
+      {
+        "testo": "Quando la laringe è sollevata",
+        "corretta": false
+      },
+      {
+        "testo": "Nei toni acuti per stabilizzare l'adduzione",
+        "corretta": false
+      },
+      {
+        "testo": "Quando la voce è molto grave",
+        "corretta": false
+      },
+      {
+        "testo": "Quando si cerca di aumentare la risonanza",
+        "corretta": false
+      },
+      {
+        "testo": "Una paralisi delle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Un edema della commissura posteriore",
+        "corretta": false
+      },
+      {
+        "testo": "Un'infiammazione acuta",
+        "corretta": false
+      },
+      {
+        "testo": "Tutte",
+        "corretta": false
+      },
+      {
+        "testo": "Un miglioramento della tensione longitudinale cordale",
+        "corretta": false
+      },
+      {
+        "testo": "L'uso di un altro meccanismo di chiusura",
+        "corretta": false
+      },
+      {
+        "testo": "Un cambiamento nel flusso sottoglottico d'aria",
+        "corretta": false
+      },
+      {
+        "testo": "Un aumento della risonanza nasale",
+        "corretta": false
+      },
+      {
+        "testo": "Una voce più forte e stabile",
+        "corretta": false
+      },
+      {
+        "testo": "Una difficoltà a chiudere completamente le corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Un'intensità vocale che rimane invariata",
+        "corretta": false
+      },
+      {
+        "testo": "Un miglioramento nella qualità della voce acuta",
+        "corretta": false
+      },
+      {
+        "testo": "Un problema al margine nelle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Un cambiamento nel flusso d'aria",
+        "corretta": false
+      },
+      {
+        "testo": "Un'infiammazione cronica della laringe",
+        "corretta": false
+      },
+      {
+        "testo": "Un miglioramento nella resistenza glottica",
+        "corretta": false
+      }
+    ],
+    "spiegazione": " Cosa accade quando il muscolo cricotiroideo è attivato? Quale effetto ha l’attivazione simultanea di cricotiroideo e tiroaritenoideo? Che tipo di suono si produce quando gli armonici acuti sono predominanti in un suono grave? Cos'è la \"fuga d'aria\" nella voce? Qual è il principale problema nella valutazione percettiva della voce? Cosa implica un test di \"affaticabilità\" della voce? Qual è una caratteristica della scala Girbas? Cosa provoca il sovraccarico della \"muscolatura adduttoria\" alla voce? Quando si osserva una \"voce iperfunzionale tesa\", quale potrebbe essere la causa principale? 1In quale situazione si richiede una \"valutazione percettiva contestualizzata\" della voce? In quale situazione si richiede una \"valutazione percettiva contestualizzata\" della voce? Quale parametro è fondamentale per capire se una voce è affaticabile durante un test di sovraccarico? Qual è il principale strumento per analizzare la qualità della voce durante un'esame foniatrico? In quale situazione l'interaritenoideo è particolarmente attivo? Cosa può causare un'interferenza nella rotazione dell'aritenoide? Quando la voce si stabilizza riducendo l'intensità, cosa potrebbe indicare? Che cosa si osserva quando un soggetto ha un’ipotonia muscolare nelle corde vocali? In un test vocale, se la fuga d'aria aumenta con l’aumento della frequenza, cosa potrebbe suggerire? In quale situazione si richiede una \"valutazione percettiva contestualizzata\" della voce? Quale parametro è fondamentale per capire se una voce è affaticabile durante un test di sovraccarico? Qual è il principale strumento per analizzare la qualità della voce durante un'esame foniatrico? In quale situazione l'interaritenoideo è particolarmente attivo? Cosa può causare un'interferenza nella rotazione dell'aritenoide? Quando la voce si stabilizza riducendo l'intensità, cosa potrebbe indicare? ì Che cosa si osserva quando un soggetto ha un’ipotonia muscolare nelle corde vocali? In un test vocale, se la fuga d'aria aumenta con l’aumento della frequenza, cosa potrebbe suggerire?"
+  },
+  {
+    "id": "q320",
+    "domanda": "Qual è la principale causa della raucedine che non scompare quando si aumenta l'intensità della voce?",
+    "opzioni": [
+      {
+        "testo": "Un edema muscolare",
+        "corretta": false
+      },
+      {
+        "testo": "Una cicatrice nelle corde vocali",
+        "corretta": false
+      },
+      {
+        "testo": "Un abbassamento della laringe",
+        "corretta": false
+      },
+      {
+        "testo": "Una disfunzione dell'articolazione cricotiroidea",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  },
+  {
+    "id": "q321",
+    "domanda": "Quando un soggetto presenta una fuga d'aria costante in forte e una raucedine nelle note acute, cosa potrebbe indicare?",
+    "opzioni": [
+      {
+        "testo": "Una cisti sulla corda vocale",
+        "corretta": false
+      },
+      {
+        "testo": "Un'ipotonia muscolare",
+        "corretta": false
+      },
+      {
+        "testo": "Una difficoltà nella gestione del flusso d'aria",
+        "corretta": false
+      },
+      {
+        "testo": "Una fibrosi delle corde vocali",
+        "corretta": false
+      }
+    ],
+    "spiegazione": "Spiegazione non disponibile."
+  }
+]
