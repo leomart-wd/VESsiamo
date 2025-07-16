@@ -1,33 +1,116 @@
-/* ... Stili precedenti ... */
-
-/* --- NUOVI STILI PER LA VALUTAZIONE DELLE DOMANDE APERTE --- */
-.user-answer-box {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 0.375rem;
-    padding: 1rem;
-    min-height: 150px;
-    white-space: pre-wrap; /* Mantiene la formattazione del testo dell'utente */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
 }
 
-.keyword-summary {
-    font-size: 0.95em;
-    font-style: italic;
+.card {
+    transition: all 0.3s ease-in-out;
+    border: none !important;
+}
+
+h1.card-title {
+    font-weight: 700;
+}
+
+.btn-lg {
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-lg:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#progress-bar-inner {
+    transition: width 0.4s ease-in-out;
+    background-color: #198754;
+}
+
+.question-block {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    border: 1px solid #dee2e6;
+}
+
+.question-text {
+    font-weight: 600;
+    font-size: 1.1em;
     margin-bottom: 1rem;
 }
 
-.keyword-checklist-item .form-check-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.options-container .form-check-label {
+    display: block;
     width: 100%;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
-.keyword-checklist-item i {
-    color: var(--primary-color);
-    cursor: help;
-}
-
-.result-item.open .progress {
+.options-container .form-check-label:hover {
     background-color: #e9ecef;
 }
+
+.options-container .form-check-input {
+    display: none;
+}
+
+.options-container .form-check-input:checked + .form-check-label {
+    background-color: #cfe2ff;
+    border-color: #0d6efd;
+    color: #052c65;
+    font-weight: 600;
+}
+
+/* Stili per la pagina dei risultati e storico */
+.result-item, .history-item {
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+
+.result-item.correct { background-color: #d1e7dd; border-color: #198754; }
+.result-item.incorrect { background-color: #f8d7da; border-color: #dc3545; }
+.result-item.open { background-color: #e2e3e5; border-color: #6c757d; }
+.result-question { font-weight: 600; margin-bottom: 0.5rem; }
+.result-explanation { margin-top: 0.75rem; font-size: 0.9em; color: #495057; }
+
+/* Stili per lo storico */
+.history-chart-container {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+}
+
+.history-table {
+    font-size: 0.9em;
+}
+
+.history-date {
+    color: #6c757d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.d-none {
+    display: none !important;
+}
+
+
+
+
