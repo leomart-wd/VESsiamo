@@ -93,7 +93,6 @@
 
 <!-- STILE -->
 <style>
-/* Pulsante Tutor (foto rotonda) */
 #tutor-button {
   position: fixed;
   bottom: 20px;
@@ -111,14 +110,15 @@
 #tutor-button:hover {
   transform: scale(1.1);
 }
+
 #tutor-button img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   border-radius: 50%;
 }
 
-/* Fumetto */
 #speech-bubble {
   position: fixed;
   bottom: 100px;
@@ -136,54 +136,6 @@
 #tutor-button:hover + #speech-bubble {
   opacity: 1;
 }
-
-/* Pannello laterale */
-#chat-panel {
-  position: fixed;
-  top: 0;
-  right: -400px;
-  width: 350px;
-  height: 100%;
-  background-color: #f7f7f7;
-  box-shadow: -4px 0 8px rgba(0,0,0,0.2);
-  z-index: 10002;
-  transition: right 0.4s ease;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-#chat-panel.open {
-  right: 0;
-}
-
-/* Chiudi */
-#close-chat {
-  align-self: flex-end;
-  font-size: 18px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  color: #888;
-}
-
-/* Messaggio e pulsante */
-#chat-panel p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #333;
-}
-#open-gpt-btn {
-  padding: 10px 15px;
-  background-color: #4b8df8;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: background-color 0.3s;
-}
-#open-gpt-btn:hover {
-  background-color: #3a7ce2;
-}
 </style>
 
 <!-- ELEMENTI HTML -->
@@ -192,36 +144,18 @@
 </div>
 <div id="speech-bubble">Chiedi a me!</div>
 
-<div id="chat-panel">
-  <div id="close-chat">✖</div>
-  <p>Ciao! Sono il Tutor VES. Fai clic qui sotto per iniziare a farmi domande sul corso.</p>
-  <button id="open-gpt-btn">Apri il Tutor</button>
-</div>
-
 <!-- SCRIPT -->
 <script>
-  const tutorButton = document.getElementById('tutor-button');
-  const chatPanel = document.getElementById('chat-panel');
-  const closeChat = document.getElementById('close-chat');
-  const openGPTBtn = document.getElementById('open-gpt-btn');
-
-  tutorButton.addEventListener('click', () => {
-    chatPanel.classList.add('open');
-  });
-
-  closeChat.addEventListener('click', () => {
-    chatPanel.classList.remove('open');
-  });
-
-  openGPTBtn.addEventListener('click', () => {
+  document.getElementById('tutor-button').addEventListener('click', function () {
     window.open(
       'https://chatgpt.com/g/g-68778387b31081918d876453face6087-tutor-ves',
-      '_blank'
+      'TutorVES',
+      'width=500,height=700,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes'
     );
   });
 </script>
 
-
+</script>
 
 <!-- Ves tutor Chatgpt -->
     
