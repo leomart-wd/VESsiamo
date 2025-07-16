@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container my-5">
         <main id="app-container">
             <!-- Schermata del Menù Principale -->
@@ -85,5 +86,80 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Script personalizzato -->
     <script src="script.js"></script>
+
+    <!-- Ves tutor Chatgpt -->
+
+    <!-- BOTTONCINO FISSO -->
+<style>
+#floating-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4b8df8;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 10000;
+}
+#chat-modal {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 400px;
+  height: 600px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  z-index: 10001;
+  display: none;
+  flex-direction: column;
+}
+#chat-modal iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#chat-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #888;
+}
+</style>
+
+<!-- ELEMENTI VISUALI -->
+<div id="floating-chat" title="Apri Tutor VES">💬</div>
+
+<div id="chat-modal">
+  <div id="chat-close">✖</div>
+  <iframe src="https://chatgpt.com/g/g-68778387b31081918d876453face6087-tutor-ves" allow="fullscreen"></iframe>
+</div>
+
+<!-- SCRIPT DI CONTROLLO -->
+<script>
+  const floatingChat = document.getElementById('floating-chat');
+  const chatModal = document.getElementById('chat-modal');
+  const chatClose = document.getElementById('chat-close');
+
+  floatingChat.addEventListener('click', () => {
+    chatModal.style.display = 'flex';
+  });
+
+  chatClose.addEventListener('click', () => {
+    chatModal.style.display = 'none';
+  });
+</script>
+
+
+        <!-- Ves tutor Chatgpt -->
+    
 </body>
 </html>
