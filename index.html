@@ -89,42 +89,70 @@
 
 <!-- Ves tutor Chatgpt -->
 
-<!-- BOT FLOTANTE: Stile -->
+<!-- STILE -->
 <style>
-#floating-chat {
+#tutor-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #4b8df8;
-  color: white;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 28px;
-  text-align: center;
-  line-height: 60px;
-  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid #ffffff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   z-index: 10000;
-  transition: background-color 0.3s;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
-#floating-chat:hover {
-  background-color: #3a7ce2;
+#tutor-button:hover {
+  transform: scale(1.1);
+}
+
+#tutor-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+#speech-bubble {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #4b8df8;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10001;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#tutor-button:hover + #speech-bubble {
+  opacity: 1;
 }
 </style>
 
-<!-- BOT FLOTANTE: Elemento -->
-<div id="floating-chat" title="Apri Tutor VES">💬</div>
+<!-- ELEMENTI HTML -->
+<div id="tutor-button" title="Clicca per aprire il Tutor VES">
+  <img src="./AB.jpeg" alt="Tutor VES">
+</div>
+<div id="speech-bubble">Chiedi a me!</div>
 
-<!-- BOT FLOTANTE: Script -->
+<!-- SCRIPT -->
 <script>
-  document.getElementById('floating-chat').addEventListener('click', function () {
+  document.getElementById('tutor-button').addEventListener('click', function () {
     window.open(
       'https://chatgpt.com/g/g-68778387b31081918d876453face6087-tutor-ves',
       'TutorVES',
       'width=500,height=700,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes'
     );
   });
+</script>
+
 </script>
 
 
