@@ -89,7 +89,7 @@
 
     <!-- Ves tutor Chatgpt -->
 
-    <!-- BOTTONCINO FISSO -->
+<!-- BOT FLOTANTE: Stile -->
 <style>
 #floating-chat {
   position: fixed;
@@ -106,55 +106,24 @@
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   z-index: 10000;
+  transition: background-color 0.3s;
 }
-#chat-modal {
-  position: fixed;
-  bottom: 90px;
-  right: 20px;
-  width: 400px;
-  height: 600px;
-  background: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-  z-index: 10001;
-  display: none;
-  flex-direction: column;
-}
-#chat-modal iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-#chat-close {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  color: #888;
+#floating-chat:hover {
+  background-color: #3a7ce2;
 }
 </style>
 
-<!-- ELEMENTI VISUALI -->
+<!-- BOT FLOTANTE: Elemento -->
 <div id="floating-chat" title="Apri Tutor VES">💬</div>
 
-<div id="chat-modal">
-  <div id="chat-close">✖</div>
-  <iframe src="https://chatgpt.com/g/g-68778387b31081918d876453face6087-tutor-ves" allow="fullscreen"></iframe>
-</div>
-
-<!-- SCRIPT DI CONTROLLO -->
+<!-- BOT FLOTANTE: Script -->
 <script>
-  const floatingChat = document.getElementById('floating-chat');
-  const chatModal = document.getElementById('chat-modal');
-  const chatClose = document.getElementById('chat-close');
-
-  floatingChat.addEventListener('click', () => {
-    chatModal.style.display = 'flex';
-  });
-
-  chatClose.addEventListener('click', () => {
-    chatModal.style.display = 'none';
+  document.getElementById('floating-chat').addEventListener('click', function () {
+    window.open(
+      'https://chatgpt.com/g/g-68778387b31081918d876453face6087-tutor-ves',
+      'TutorVES',
+      'width=500,height=700,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes'
+    );
   });
 </script>
 
