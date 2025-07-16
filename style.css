@@ -1,123 +1,59 @@
-/*
- * Stile ispirato a voiceevolutioninstitute.it
- */
-
-/* Variabili dei colori e font per coerenza */
-:root {
-    --ves-blue: #00A3FF;
-    --ves-dark: #1a1a1a;
-    --ves-text: #333333;
-    --ves-light-gray: #f5f5f7;
-    --ves-border-color: #e5e5e5;
-    --ves-white: #ffffff;
-    --ves-success: #28a745;
-    --ves-error: #dc3545;
-    --font-primary: 'Montserrat', sans-serif;
-}
-
 body {
-    font-family: var(--font-primary);
-    background-color: var(--ves-light-gray);
-    color: var(--ves-text);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
 }
 
-#app-container {
-    width: 100%;
-    max-width: 850px;
-}
-
-/* Stile comune per tutti i contenitori principali */
-#menu-container, #quiz-container, #results-container, #history-container {
-    background-color: var(--ves-white);
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    padding: clamp(25px, 5vw, 50px);
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-h1, h2, h3 {
-    font-weight: 700;
-    color: var(--ves-dark);
+.card {
+    transition: all 0.3s ease-in-out;
+    border: none !important;
 }
 
 h1.card-title {
-    font-size: 2.2rem;
-}
-
-.subtitle, .form-text {
-    color: #666;
-}
-
-/* --- Stile Menù --- */
-.menu-btn {
-    padding: 12px 20px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--ves-white);
-    background-color: var(--ves-blue);
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.2s, transform 0.2s;
-}
-
-.menu-btn:hover {
-    background-color: #008ad1;
-    transform: translateY(-2px);
-}
-
-#view-history-btn {
-    background-color: var(--ves-dark);
-}
-#view-history-btn:hover {
-    background-color: #000000;
-}
-
-/* --- Stile Quiz --- */
-#quiz-title {
-    color: var(--ves-dark);
     font-weight: 700;
 }
 
+.btn-lg {
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-lg:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 #progress-bar-inner {
-    background-color: var(--ves-blue);
     transition: width 0.4s ease-in-out;
+    background-color: #198754;
 }
 
 .question-block {
-    background-color: transparent;
-    border: 1px solid var(--ves-border-color);
+    margin-bottom: 2rem;
     padding: 1.5rem;
-    border-radius: 5px;
-    margin-bottom: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    border: 1px solid #dee2e6;
 }
 
 .question-text {
     font-weight: 600;
-    font-size: 1.15rem;
-    color: var(--ves-dark);
+    font-size: 1.1em;
+    margin-bottom: 1rem;
 }
 
-/* Opzioni di risposta */
 .options-container .form-check-label {
     display: block;
     width: 100%;
     padding: 0.75rem 1.25rem;
-    border: 1px solid var(--ves-border-color);
-    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .options-container .form-check-label:hover {
-    border-color: var(--ves-blue);
-    background-color: #f8f9fa;
+    background-color: #e9ecef;
 }
 
 .options-container .form-check-input {
@@ -125,76 +61,56 @@ h1.card-title {
 }
 
 .options-container .form-check-input:checked + .form-check-label {
-    background-color: var(--ves-blue);
-    border-color: var(--ves-blue);
-    color: var(--ves-white);
+    background-color: #cfe2ff;
+    border-color: #0d6efd;
+    color: #052c65;
     font-weight: 600;
 }
 
-/* Input e Textarea */
-.form-control, .open-ended-input, .short-answer-input {
-    border-radius: 5px;
-    border-color: var(--ves-border-color);
-}
-.form-control:focus, .open-ended-input:focus, .short-answer-input:focus {
-    border-color: var(--ves-blue);
-    box-shadow: 0 0 0 0.25rem rgba(0, 163, 255, 0.25);
-}
-
-/* Pulsanti di azione */
-#submit-btn {
-    background-color: #f0ad4e; /* Giallo/Arancio come colore di accento */
-    border-color: #f0ad4e;
-    font-weight: 700;
-}
-#submit-btn:hover {
-    background-color: #ec971f;
-    border-color: #ec971f;
-}
-#back-to-menu-btn, #back-to-menu-during-quiz-btn {
-    background-color: #6c757d;
-    border-color: #6c757d;
-}
-#back-to-menu-btn:hover, #back-to-menu-during-quiz-btn:hover {
-    background-color: #5a6268;
-    border-color: #545b62;
-}
-
-/* --- Stile Risultati e Storico --- */
-.result-item {
+/* Stili per la pagina dei risultati e storico */
+.result-item, .history-item {
     margin-bottom: 1.5rem;
     padding: 1.25rem;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     border-left-width: 5px;
     border-left-style: solid;
 }
 
-.result-item.correct { background-color: #d4edda; border-color: var(--ves-success); }
-.result-item.incorrect { background-color: #f8d7da; border-color: var(--ves-error); }
+.result-item.correct { background-color: #d1e7dd; border-color: #198754; }
+.result-item.incorrect { background-color: #f8d7da; border-color: #dc3545; }
 .result-item.open { background-color: #e2e3e5; border-color: #6c757d; }
-.result-question { font-weight: 600; color: var(--ves-dark); }
-.result-explanation { margin-top: 0.75rem; font-size: 0.95em; color: #555; }
-.result-explanation strong { color: var(--ves-dark); }
+.result-question { font-weight: 600; margin-bottom: 0.5rem; }
+.result-explanation { margin-top: 0.75rem; font-size: 0.9em; color: #495057; }
 
-#score-text {
-    color: var(--ves-blue);
-    font-weight: 700;
-}
-
-/* Grafico nello storico */
+/* Stili per lo storico */
 .history-chart-container {
     margin-bottom: 2rem;
     padding: 1rem;
-    border: 1px solid var(--ves-border-color);
-    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
 }
 
-/* Animazioni e utilità */
+.history-table {
+    font-size: 0.9em;
+}
+
+.history-date {
+    color: #6c757d;
+}
+
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
 }
 
 .d-none {
     display: none !important;
 }
+
+
+
+
